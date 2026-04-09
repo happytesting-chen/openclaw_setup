@@ -1,12 +1,49 @@
 # OpenClaw Setup Guide
 
+> For the full official installation guide, see: https://docs.openclaw.ai/start/getting-started
+
 ## Step 1: Install OpenClaw
 
-Run the following command to install OpenClaw:
+### Prerequisites
+- Node.js version 22.14+ (version 24 recommended)
+- An API key from a supported provider (Anthropic, OpenAI, or Google)
 
+#### Check if Node.js is installed
+
+```bash
+node -v
+```
+
+If Node.js is not installed or the version is below 22, install it using nvm:
+
+```bash
+# Install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
+
+# Reload shell
+source ~/.bashrc
+
+# Install Node 22+
+nvm install 22
+nvm use 22
+
+# Verify
+node -v   # Should show v22.x.x
+```
+
+### Install OpenClaw
+
+**macOS / Linux:**
 ```bash
 curl -fsSL https://openclaw.ai/install.sh | bash
 ```
+
+**Windows (PowerShell):**
+```powershell
+iwr -useb https://openclaw.ai/install.ps1 | iex
+```
+
+> Alternative installation methods are also available: Docker, Nix, npm.
 
 ---
 
