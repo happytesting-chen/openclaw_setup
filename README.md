@@ -55,7 +55,7 @@ Run the onboard command to initialize OpenClaw and install the daemon:
 openclaw onboard --install-daemon
 ```
 
-During this process, you will be prompted to choose a model. All other settings can be configured later.
+For the quick setup, you only need to configure the basic requirements (e.g. model provider and API key). Optional integrations such as Telegram and WhatsApp can be configured later.
 
 > **Note:** The setup wizard generates a gateway token by default, even for loopback (local) connections. This means local clients must authenticate before connecting. This prevents other local processes from calling your Gateway without permission.
 
