@@ -49,6 +49,12 @@ http://127.0.0.1:18789
 
 ### 3.2 Configure the Bot Token in OpenClaw
 
+The default OpenClaw configuration file is located at:
+
+```
+~/.openclaw/openclaw.json
+```
+
 Add the token to your OpenClaw configuration:
 
 ```json
@@ -67,3 +73,23 @@ Add the token to your OpenClaw configuration:
 ```
 
 Replace `YOUR_BOT_TOKEN_HERE` with the token provided by BotFather.
+
+> **Note:** After configuring `openclaw.json`, restart the OpenClaw gateway for changes to take effect:
+
+```bash
+openclaw gateway restart
+```
+
+---
+
+## Step 4: Pair the Telegram Bot (First-Time Use)
+
+1. Open your Telegram bot and send: `hi`
+2. The bot will respond with a pairing code
+3. Run the following command in your terminal, replacing `xxxx` with your pairing code:
+
+```bash
+openclaw pairing approve telegram xxxx
+```
+
+Once paired, you can start chatting with OpenClaw directly through your Telegram bot.
